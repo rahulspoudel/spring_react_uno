@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://localhost:5432/oscodedemo
+      username: postgres
+      password: password
+      maximum-pool-size: 30
