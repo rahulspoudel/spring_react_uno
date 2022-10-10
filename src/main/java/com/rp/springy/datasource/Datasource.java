@@ -9,13 +9,13 @@ import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
 public class Datasource {
-	
-	@Bean
-	@ConfigurationProperties("spring.datasource.hikari")
-	public HikariDataSource hikariDataSource() {
-		return DataSourceBuilder
-				.create()
-				.type(HikariDataSource.class)
-				.build();
-	}
+
+    @Bean
+    @ConfigurationProperties("spring.datasource.hikari")
+    HikariDataSource hikariDataSource() {
+        return DataSourceBuilder
+                .create()
+                .type(HikariDataSource.class)
+                .build();
+    }
 }
