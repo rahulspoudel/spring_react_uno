@@ -23,7 +23,8 @@ public class StudentController {
 	
 	@GetMapping
 	public List<Student> getAllStudents(){
-		return studentService.getAllStudents();
+		throw new IllegalStateException("Cannot return all students");
+//		return studentService.getAllStudents();
 	}
 	
 	@PostMapping
